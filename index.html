@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetSentry | Sneha Parmar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hud">
+        <h1>NET_SENTRY.v1</h1>
+        <div class="traffic-stats">
+            <p>PACKETS_CAPTURED: 8,291</p>
+            <p>ACTIVE_NODES: 52</p>
+            <p>LATENCY: 14MS</p>
+        </div>
+    </div>
+
+    <div class="log-window" id="log">
+        <div>[19:40:02] <span class="tag-secure">AUTH_SUCCESS</span> LOCALHOST</div>
+        <div>[19:40:15] <span class="tag-warn">DHCP_RENEW</span> ADDR:192.168.1.5</div>
+        <div>[19:40:22] <span class="tag-secure">ENCRYPT_INIT</span> TLS_1.3</div>
+        <div>[19:40:55] <span class="tag-threat">INVALID_REQUEST</span> BLOCKED_BY_ACL</div>
+    </div>
+
+    <canvas id="network-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>

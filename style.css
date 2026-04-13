@@ -1,0 +1,53 @@
+:root {
+    --net-bg: #050a10;
+    --net-cyan: #00d4ff;
+}
+
+body {
+    background: var(--net-bg);
+    margin: 0;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    overflow: hidden;
+}
+
+.hud {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--net-cyan);
+    text-shadow: 0 0 20px var(--net-cyan);
+}
+
+.traffic-stats {
+    margin-top: 20px;
+    border-left: 2px solid var(--net-cyan);
+    padding-left: 15px;
+}
+
+#network-canvas {
+    width: 100vw;
+    height: 100vh;
+}
+
+.log-window {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 300px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--net-cyan);
+    padding: 15px;
+    font-size: 11px;
+    overflow-y: hidden;
+}
+
+.tag-secure { color: #00ff88; }
+.tag-warn { color: #ffeb3b; }
+.tag-threat { color: #ff5252; }
