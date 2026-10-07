@@ -1,4 +1,4 @@
-..# 🛰️ NetSentry | Network Traffic Visualizer
+....# 🛰️ NetSentry | Network Traffic Visualizer
 
 A sophisticated network visualization tool that uses Canvas animations to represent data flow, node connectivity, and system health.
 
